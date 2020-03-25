@@ -2,6 +2,11 @@
     <img src="https://raw.githubusercontent.com/AllanOliveiraM/sarah-residential-automation/master/media_files/product_logo.png" width="400">
 </p>
 
+
+[Minimal Python Version](https://raw.githubusercontent.com/AllanOliveiraM/sarah-residential-automation/master/media_files/python-v3.7-blue.svg)
+[License](https://raw.githubusercontent.com/AllanOliveiraM/sarah-residential-automation/master/media_files/license-MIT-green.svg)
+
+
 # Sarah Residential Automation
 *sarah-residential-automation*
 Residential Automation is an Artificial Intelligence Project using Arduino platform and Python systems.
@@ -11,7 +16,10 @@ Residential Automation is an Artificial Intelligence Project using Arduino platf
 ## Help Features
 
 ### Instalation
-Pending implementation.
+
+```
+$ pip install -r requirements.txt
+```
 
 ### Running the Project
 Pending implementation.
