@@ -3,3 +3,6 @@
 
 # VS Code Files
 .vscode
+
+# Theia Files
+.theia
