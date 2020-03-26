@@ -4,8 +4,8 @@
 
 
 <p align="center">
-    ![LICENSE](https://sarah-residential-automation.netlify.com/media_files/license-MIT-green.svg)
-    ![Python Version](https://sarah-residential-automation.netlify.com/media_files/python-v3.7-blue.svg)
+    <img src="">
+    <img src="">
 </p>
 
 
