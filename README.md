@@ -4,8 +4,8 @@
 
 
 <p align="center">
-    <img src="">
-    <img src="">
+    <img height="20" src="https://raw.githubusercontent.com/AllanOliveiraM/sarah-residential-automation/master/media_files/license-MIT-green.png">
+    <img height="20" src="https://raw.githubusercontent.com/AllanOliveiraM/sarah-residential-automation/master/media_files/python-v3.7-blue.png">
 </p>
 
 
