@@ -1,3 +1,4 @@
 pyserial
 django
 pillow
+pylint
