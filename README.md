@@ -13,12 +13,15 @@
 **sarah-residential-automation** is an Artificial Intelligence Project using Arduino platform and Python systems.
 **Project created only** for the purpose of learning architecture and software development.
 
+<br>
 
 ## Help Features
 
 **Important:**
 As of the date of this documentation, the project is incompatible with the OS windows platform.
 Compatibility is being developed.
+
+<br>
 
 ### Automated Installation
 
@@ -32,6 +35,8 @@ $ python3 install_workstation_YourSOHere.py
 ### Manually Installation
 Pending issue.
 
+<br>
+
 ### Running the Project on Linux
 
 ```
@@ -42,8 +47,12 @@ $ python main.py
 ### Running the Project on Windows
 Pending implementation.
 
+<br>
+
 ### Tuturials
 Pending.
+
+<br>
 
 ## Autor
 
