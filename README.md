@@ -16,18 +16,34 @@
 
 ## Help Features
 
-### Instalation
+**Important:**
+As of the date of this documentation, the project is incompatible with the OS windows platform.
+Compatibility is being developed.
+
+### Automated Installation
+
+**Important:**
+Replace `YOUR_SO_HERE` with `linux` or `windows`, depending on your SO platform.
 
 ```
-$ python3 install_workstation.py
+$ python3 install_workstation<YOUR_SO_HERE>.py
 ```
 
-### Running the Project
+### Manually Installation
+Pending issue.
+
+### Running the Project on Linux
+
+```
+$ source venv/bin/activate
+$ python main.py
+```
+
+### Running the Project on Windows
 Pending implementation.
 
 ### Tuturials
-Pending implementation.
-
+Pending.
 
 ## Autor
 
