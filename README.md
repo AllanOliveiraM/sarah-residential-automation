@@ -23,10 +23,10 @@ Compatibility is being developed.
 ### Automated Installation
 
 **Important:**
-Replace `YOUR_SO_HERE` with `linux` or `windows`, depending on your SO platform.
+Replace `YourSOHere` with `linux` or `windows`, depending on your SO platform.
 
 ```
-$ python3 install_workstation<YOUR_SO_HERE>.py
+$ python3 install_workstation_YourSOHere.py
 ```
 
 ### Manually Installation
