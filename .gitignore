@@ -1,4 +1,4 @@
-# GitIgnore
+#### GitIgnore File
 
 
 # VS Code Files
@@ -6,3 +6,6 @@
 
 # Theia Files
 .theia
+
+# Python Virtual Env
+venv
