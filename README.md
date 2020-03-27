@@ -19,7 +19,7 @@
 ### Instalation
 
 ```
-$ pip install -r requirements.txt
+$ python3 install_workstation.py
 ```
 
 ### Running the Project
