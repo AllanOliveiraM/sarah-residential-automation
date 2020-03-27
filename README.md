@@ -58,7 +58,7 @@ Pending.
 
 <br>
 
-## Autor
+## Author
 
 | [<img src="https://avatars3.githubusercontent.com/u/41436010?s=460&u=aba907c4e4f26dae5e45383b4fa17fc4c002bfe8&v=4" width=115><br><sub>@AllanOliveiraM</sub>](https://github.com/AllanOliveiraM) |
 | :---: |
