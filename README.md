@@ -22,6 +22,7 @@ As of the date of this documentation, the project is incompatible with the OS wi
 Compatibility is being developed.
 
 <br>
+<br>
 
 ## Install
 
@@ -38,6 +39,7 @@ $ python3 install_workstation_YourSOHere.py
 Pending issue.
 
 <br>
+<br>
 
 ## Running
 
@@ -52,10 +54,12 @@ $ python main.py
 Pending implementation.
 
 <br>
+<br>
 
-### Tuturials
+## Tuturials
 Pending.
 
+<br>
 <br>
 
 ## Author
