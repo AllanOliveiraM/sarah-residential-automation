@@ -23,6 +23,8 @@ Compatibility is being developed.
 
 <br>
 
+## Install
+
 ### Automated Installation
 
 **Important:**
@@ -36,6 +38,8 @@ $ python3 install_workstation_YourSOHere.py
 Pending issue.
 
 <br>
+
+## Running
 
 ### Running the Project on Linux
 
