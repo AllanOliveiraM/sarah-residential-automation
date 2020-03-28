@@ -29,3 +29,6 @@ SOFTWARE.
 
 
 from modules.execution.async_run import *
+
+
+print('< INFO > Core Module Loaded.')
