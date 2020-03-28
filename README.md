@@ -31,12 +31,17 @@ Compatibility is being developed.
 
 ### Automated Installation
 
-**Important:**
-Replace `YourSOHere` with `linux` or `windows`, depending on your SO platform.
+#### Linux
 
 ```
-$ python3 install_workstation_YourSOHere.py && source ./venv/bin/activate && pip install -r requirements.txt && echo Done
+$ python3 install_workstation_linux.py && source ./venv/bin/activate && pip install -r requirements.txt && echo Done
 ```
+
+#### Windows
+
+Pending implementation.
+
+<br>
 
 ### Manually Installation
 Pending issue.
