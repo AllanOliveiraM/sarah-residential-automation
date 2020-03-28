@@ -13,6 +13,7 @@ jobs:
       - python/save-cache
       - run:
           command: sh ./install_workstation_linux.sh
+      - run:
           command: ./modules/backend/manage.py test
 
 workflows:
