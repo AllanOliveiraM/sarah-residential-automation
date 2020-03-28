@@ -100,7 +100,8 @@ def main():
         upgrade_pip()
 
 
-    print('\n\nSarah Venv Installed Successfully!\nIf not auto, run this commands to continue install:\n\nsource ./venv/bin/activate\npip install -r requirements.txt\n')
+    print('\n\nSarah Venv Installed Successfully!\nIf not auto, run this commands to continue install:')
+    print('\n\nsource ./venv/bin/activate\npip install -r requirements.txt\n')
 
 
 if __name__ == "__main__":
