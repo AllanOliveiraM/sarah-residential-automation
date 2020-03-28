@@ -1,7 +1,6 @@
-#!/usr/bin python3
 # coding: utf-8
 
-# Sarah Main Script
+# Sarah Async Manager Module
 
 '''
 MIT License
@@ -28,4 +27,19 @@ SOFTWARE.
 '''
 
 
-from modules.execution.async_run import *
+import asyncio
+from asyncio import sleep as async_sleep
+
+
+def async_run(funtions_list):
+    '''
+    A list of async declarated functions.
+
+    nedd 'await async_sleep(NUMBER_TO_SLEEP)'
+    '''
+
+    async def __async_run(functions_list_run):
+        await asyncio.wait(functions_list_run)
+
+    __event_loop_var = asyncio.get_event_loop()
+    __event_loop_var.run_until_complete(__async_run(funtions_list))
