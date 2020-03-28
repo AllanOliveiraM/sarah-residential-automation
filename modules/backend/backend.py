@@ -30,27 +30,16 @@ SOFTWARE.
 '''
 
 
-import os
-import sys
 import threading
+from os import system as system_command
 
 
-def __backend_thread(command):
-    os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'Sarah.settings')
-    try:
-        from django.core.management import execute_from_command_line
-        from django.core.management import
-    except ImportError as exc:
-        raise ImportError(
-            "Couldn't import Django. Are you sure it's installed and "
-            "available on your PYTHONPATH environment variable? Did you "
-            "forget to activate a virtual environment?"
-        ) from exc
-    execute_from_command_line(sys.argv)
+def __backend_thread_run(command):
+    system_command('python modules/backend/manage_cli.py ' + command)
 
 
-def run(command):
-    __back_end_thread = threading.Thread(target=__backend_thread,args=(command,))
+def backend_cmd_run(command):
+    __back_end_thread = threading.Thread(target=__backend_thread_run,args=(command,))
     __back_end_thread.start()
 
 
