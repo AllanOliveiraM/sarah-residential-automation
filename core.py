@@ -35,5 +35,5 @@ from modules.backend.backend import *
 print('< INFO > Core Module Loaded.')
 
 
-print('Starting Backend.')
+print('Starting Dev Backend Server on another Thread.')
 backend_cmd_run('runserver')
