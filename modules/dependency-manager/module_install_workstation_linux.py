@@ -98,8 +98,16 @@ def main():
         upgrade_pip()
 
 
-    print('\n\nSarah Venv Installed Successfully!\nIf not auto, run this commands to continue install:')
-    print('\n\sh ./venv/bin/activate\npip install -r requirements.txt\n')
+    print('''
+
+        Sarah Venv Installed Successfully.
+        If the installation process stopped here automatically,
+        run this commands from root project directory to continue install:
+
+        sh ./venv/bin/activate
+        pip install -r requirements.txt
+
+    ''')
 
 
 if __name__ == "__main__":
