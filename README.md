@@ -11,6 +11,7 @@
 
 # Sarah Residential Automation
 <br>
+
 **sarah-residential-automation** is an Artificial Intelligence Project using Arduino platform and Python systems.
 **Project created only** for the purpose of learning architecture and software development.
 
