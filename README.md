@@ -10,6 +10,7 @@
 
 
 # Sarah Residential Automation
+
 <br>
 
 **sarah-residential-automation** is an Artificial Intelligence Project using Arduino platform and Python systems.
@@ -29,9 +30,9 @@ Compatibility is being developed.
 
 ## Install
 
-### Automated Installation
-
 #### Linux
+
+Run this command in your terminal:
 
 ```
 $ python3 install_workstation_linux.py && source ./venv/bin/activate && pip install -r requirements.txt && echo Done
@@ -39,32 +40,35 @@ $ python3 install_workstation_linux.py && source ./venv/bin/activate && pip inst
 
 #### Windows
 
+Run this command in your command prompt:
+
 Pending implementation.
-
-<br>
-
-### Manually Installation
-Pending issue.
 
 <br>
 <br>
 
 ## Running
 
-### Running the Project on Linux
+#### Linux
+
+Run this command in your terminal:
 
 ```
 $ source venv/bin/activate
 $ python main.py
 ```
 
-### Running the Project on Windows
+#### Windows
+
+Run this command in your command prompt:
+
 Pending implementation.
 
 <br>
 <br>
 
 ## Tuturials
+
 Pending.
 
 <br>
