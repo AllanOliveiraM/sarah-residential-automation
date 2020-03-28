@@ -1,1 +1,1 @@
-python3 ./modules/dependency-manager/module_install_workstation_linux.py && echo "Continuing automatically ..." && sh ./venv/bin/activate && python -m pip install --upgrade pip && pip install -r requirements.txt && echo " " && echo "Done!"
+python3 ./modules/dependency-manager/module_install_workstation_linux.py && sh ./venv/bin/activate && ./venv/bin/python -m pip install --upgrade pip && ./venv/bin/python -m pip install -r requirements.txt && echo " " && echo "Done!"

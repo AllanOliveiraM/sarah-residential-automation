@@ -81,9 +81,10 @@ def main():
     # Install & Activate Venv
     if venv_installed == False:
         try:
+            run_command(['sudo', 'apt-get', 'install', 'python3.7'])
             run_command(['sudo', 'apt-get', 'install', 'python3-venv'])
         except:
-            print('\n\n< ERROR >\n\nInstall Venv python3 module before run this module.\n')
+            print('\n\n< ERROR >\n\nInstall Python3.7 and Venv lib before run this module.\n')
             sys.exit()
         else:
             run_command([sys.executable, '-m', 'venv', 'venv'])
@@ -93,7 +94,7 @@ def main():
 
     # Verifying if are pip installed and upgraded
     if try_pip() == False:
-        system('sh .venv/bin/activate & python modules/dependency-manager/get-pip.py')
+        system('sh .venv/bin/activate & python3 modules/dependency-manager/get-pip.py')
     else:
         upgrade_pip()
 
