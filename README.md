@@ -29,7 +29,7 @@ Compatibility is being developed.
 Run this command in your terminal:
 
 ```
-$ python3 install_workstation_linux.py && source ./venv/bin/activate && pip install -r requirements.txt && echo Done
+$ sh install_workstation_linux.sh
 ```
 
 #### Windows

@@ -39,10 +39,6 @@ def install(package):
     subprocess.check_call([sys.executable, '-m', 'pip', 'install', package])
 
 
-def upgrade_pip():
-    subprocess.check_call([sys.executable, '-m', 'pip', 'install', '--upgrade', 'pip'])
-
-
 def run_pycommand(command):
     subprocess.check_call([sys.executable, command])
 
@@ -96,8 +92,6 @@ def main():
     # Verifying if are pip installed and upgraded
     if try_pip() == False:
         system('. venv/bin/activate & python modules/dependency-manager/get-pip.py')
-    else:
-        upgrade_pip()
 
 
     print('\n\nSarah Venv Installed Successfully!\nIf not auto, run this commands to continue install:')

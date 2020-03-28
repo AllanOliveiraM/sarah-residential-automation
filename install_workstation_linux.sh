@@ -1,0 +1,1 @@
+python3 ./modules/dependency-manager/module_install_workstation_linux.py && source ./venv/bin/activate && python -m pip install --upgrade pip && pip install -r requirements.txt && echo " " && echo "Done!"
