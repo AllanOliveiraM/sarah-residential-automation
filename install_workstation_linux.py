@@ -76,14 +76,7 @@ def main():
         sys.exit()
 
 
-    # Verifying if are pip installed and upgraded
-    if try_pip() == False:
-        run_pycommand('modules/dependency-manager/get-pip.py')
-    else:
-        upgrade_pip()
-
-
-    # Install Venv
+    # Install & Activate Venv
     if venv_installed == False:
         try:
             run_command(['sudo', 'apt-get', 'install', 'python3-venv'])
@@ -92,6 +85,18 @@ def main():
             sys.exit()
         else:
             run_command([sys.executable, '-m', 'venv', 'venv'])
+    else:
+        pass
+
+
+    # Verifying if are pip installed and upgraded
+    if try_pip() == False:
+        system('. venv/bin/activate & python modules/dependency-manager/get-pip.py')
+    else:
+        upgrade_pip()
+
+
+    print('\n\nSarah Venv Installed Successfully!\nIf not auto, run this commands to continue install:\n\nsource ./venv/bin/activate\npip install -r requirements.txt\n')
 
 
 if __name__ == "__main__":
