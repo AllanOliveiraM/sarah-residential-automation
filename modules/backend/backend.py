@@ -1,7 +1,9 @@
-#!/usr/bin/env python
+#!/usr/bin python3
 # coding: utf-8
 
-# Sarah Async Manager Module
+
+# Sarah Backend Django Module 
+
 
 '''
 MIT License
@@ -28,19 +30,29 @@ SOFTWARE.
 '''
 
 
-import asyncio
-from asyncio import sleep as async_sleep
+import os
+import sys
+import threading
 
 
-def async_run(funtions_list):
-    '''
-    A list of async declarated functions.
+def __backend_thread(command):
+    os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'Sarah.settings')
+    try:
+        from django.core.management import execute_from_command_line
+        from django.core.management import
+    except ImportError as exc:
+        raise ImportError(
+            "Couldn't import Django. Are you sure it's installed and "
+            "available on your PYTHONPATH environment variable? Did you "
+            "forget to activate a virtual environment?"
+        ) from exc
+    execute_from_command_line(sys.argv)
 
-    nedd 'await async_sleep(NUMBER_TO_SLEEP)'
-    '''
 
-    async def __async_run(functions_list_run):
-        await asyncio.wait(functions_list_run)
+def run(command):
+    __back_end_thread = threading.Thread(target=__backend_thread,args=(command,))
+    __back_end_thread.start()
 
-    __event_loop_var = asyncio.get_event_loop()
-    __event_loop_var.run_until_complete(__async_run(funtions_list))
+
+if __name__ == '__main__':
+    print("This module can't run directly. Try import it.")
