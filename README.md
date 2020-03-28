@@ -35,7 +35,7 @@ Compatibility is being developed.
 Replace `YourSOHere` with `linux` or `windows`, depending on your SO platform.
 
 ```
-$ python3 install_workstation_YourSOHere.py
+$ python3 install_workstation_YourSOHere.py && source ./venv/bin/activate && pip install -r requirements.txt && echo Done
 ```
 
 ### Manually Installation
