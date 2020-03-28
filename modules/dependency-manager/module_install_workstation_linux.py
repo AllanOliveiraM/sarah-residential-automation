@@ -75,7 +75,7 @@ def main():
     # Verifying if pyhton version == 3
     if sys.version_info[0] != 3:
         print('\nIMPORTANT\n\nUse Python 3 to run this project.\nYou can run:\n\npython3 install_workstation.py\n')
-        sys.exit()
+        sys.exit(1)
 
 
     # Install & Activate Venv
@@ -85,11 +85,9 @@ def main():
             run_command(['sudo', 'apt-get', 'install', 'python3-venv'])
         except:
             print('\n\n< ERROR >\n\nInstall Python3.7 and Venv lib before run this module.\n')
-            sys.exit()
+            sys.exit(1)
         else:
             run_command([sys.executable, '-m', 'venv', 'venv'])
-    else:
-        pass
 
 
     # Verifying if are pip installed and upgraded

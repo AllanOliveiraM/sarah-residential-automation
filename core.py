@@ -1,7 +1,7 @@
 #!/usr/bin python3
 # coding: utf-8
 
-# Sarah Main Script
+# Sarah Core Script
 
 '''
 MIT License
@@ -28,4 +28,4 @@ SOFTWARE.
 '''
 
 
-from core import *
+from modules.execution.async_run import *
