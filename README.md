@@ -6,6 +6,7 @@
 <p align="center">
     <img height="20" src="https://img.shields.io/github/license/AllanOliveiraM/sarah-residential-automation">
     <img height="20" src="https://img.shields.io/badge/Django-v3.0.4-green">
+    <img height="20" src="https://www.code-inspector.com/project/5439/score/svg">
     <img height="20" src="https://raw.githubusercontent.com/AllanOliveiraM/sarah-residential-automation/master/media_files/python-v3.7-blue.png">
     <img height="20" src="https://img.shields.io/github/issues/AllanOliveiraM/sarah-residential-automation">
 </p>
