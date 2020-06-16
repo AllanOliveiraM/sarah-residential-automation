@@ -26,51 +26,6 @@ Compatibility is being developed.
 <br>
 <br>
 
-## Install
-
-#### Linux
-
-Run this command in your terminal:
-
-```
-$ sh install_workstation_linux.sh
-```
-
-#### Windows
-
-Run this command in your command prompt:
-
-Pending implementation.
-
-<br>
-<br>
-
-## Running
-
-#### Linux
-
-Run this command in your terminal:
-
-```
-$ source venv/bin/activate
-$ python main.py
-```
-
-#### Windows
-
-Run this command in your command prompt:
-
-Pending implementation.
-
-<br>
-<br>
-
-## Tuturials
-
-Pending.
-
-<br>
-<br>
 
 ## Author
 
