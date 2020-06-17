@@ -6,12 +6,13 @@
 
 from time import sleep
 from serial import Serial
-import threading
+from collections import deque
 
 from contrib.actions import resolveResponse
 
 
 class Hardware(object):
+    """Hardware: Create object with connection."""
 
     def __init__(self):
         '''Start new connection with Arduino.
@@ -42,20 +43,11 @@ class Hardware(object):
                     ))
         else:
             self.connection = None
+            
+        self._commands = deque([''])
 
 
-    def __new_thread_run(self, function, funcargs=None):
-        '''Run function in new thread.
-        
-        Function: Function to run in a new thread immediately.
-        Funcargs: Function args in a list.
-        '''
-
-        __backend_thread = threading.Thread(target=function, args=funcargs)
-        __backend_thread.start()
-
-
-    def start_processing_response(self):
+    def start_processing(self):
         """Start processing Arduino Tag Responses."""
 
         try:
@@ -64,17 +56,38 @@ class Hardware(object):
             response = response.replace('\r', '')
             if response != '':
                 resolveResponse(self, response)
+            
+            try:
+                while True:
+                    __next_command = self._commands.popleft()
+                    self.write_command(__next_command)
+                    sleep(0.3)
+            except:
+                pass
+            
+            sleep(0.01)
         except:
             print('No hardware success connection.')
-
-
-    def write_command(self, char_):
+            
+            
+    def write_command(self, command):
         '''Send new command to Arduino.
         
         Return: Arduino Response.
         '''
 
         try:
-            self.connection.write(char_.encode())
+            self.connection.write(command.encode())
+            response = self.connection.readline().decode()
+            response = response.replace('\n', '')
+            response = response.replace('\r', '')
+            if response != '':
+                resolveResponse(self, response)
+            sleep(0.05)
         except:
             print('No hardware success connection.')
+
+
+    def new_command(self, command):
+        """Add new command to processor queue."""
+        self._commands.append(command)

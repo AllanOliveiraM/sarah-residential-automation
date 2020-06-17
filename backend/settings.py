@@ -39,6 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     
+    'background_task',
+    
     'backend_core',
 ]
 
@@ -54,7 +56,6 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'backend.urls'
 
-AUTH_USER_MODEL = 'backend_core.User'
 
 TEMPLATES = [
     {
