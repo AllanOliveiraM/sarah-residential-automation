@@ -5,13 +5,13 @@
 
 
 from time import sleep
-from serial import Serial
 from collections import deque
+from serial import Serial
 
 from contrib.actions import resolveResponse
 
 
-class Hardware(object):
+class Hardware():
     """Hardware: Create object with connection."""
 
     def __init__(self):

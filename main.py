@@ -8,7 +8,7 @@ from os import mkdir, remove, listdir
 from contrib.hardware import Hardware
 
 
-class Main(object):
+class Main():
     """Main class to manage Hardware."""
     
     def __init__(self):
@@ -68,7 +68,7 @@ class Main(object):
             
             _command_tasts = listdir('./queue/')
             
-            if not (str(name) in _command_tasts):
+            if not str(name) in _command_tasts:
                 command_file = open(f'./queue/{name}', 'w')
                 command_file.write(command)
                 command_file.close()
