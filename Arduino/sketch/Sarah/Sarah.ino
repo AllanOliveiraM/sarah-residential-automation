@@ -42,7 +42,7 @@ void loop() {
       Serial.println("RELE-2-OFF");
       digitalWrite(pinReleTwo, HIGH);
     } else {
-      Serial.println(readSerial);    // else
+      Serial.println(readSerial);     // else
     }
   } else {
     
@@ -61,4 +61,3 @@ void loop() {
     rfid.PCD_StopCrypto1();
   }
 }
-
