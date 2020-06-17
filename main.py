@@ -2,7 +2,6 @@
 
 
 import threading
-from time import sleep
 from os import mkdir, remove, listdir
 
 from contrib.hardware import Hardware
@@ -14,7 +13,7 @@ class Main():
     def __init__(self):
         """Start Command manager loop and Hardware Instance."""
 
-        def new_thread_run(function, funcargs=[]):
+        def new_thread_run(function, funcargs=None):
             '''Run a function in new thread.
             
             Function: Function to run in a new thread immediately.
@@ -73,8 +72,8 @@ class Main():
                 command_file.write(command)
                 command_file.close()
                 break
-            else:
-                name += 1
+
+            name += 1
         
 
 main = Main()
