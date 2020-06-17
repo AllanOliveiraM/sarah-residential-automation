@@ -10,16 +10,13 @@ from time import sleep
 def resolveResponse(hardware, response):
     """Resolve Arduino responses."""
 
+    if response == 'SERVER':
+        hardware.write_command('T')
 
-    if response == 'A5:A9:9C:73':
+    elif response == 'A5:A9:9C:73' or response == 'D0:E5:6D:C1' or response == '5A:2C:77:89':
         hardware.write_command('a')
         sleep(0.5)
         hardware.write_command('b')
-
-    elif response == '5A:2C:77:89':
-        hardware.write_command('c')
-        sleep(0.5)
-        hardware.write_command('d')
 
     elif response == 'RELE-1-ON':
         print('RELE-1-ON')
@@ -32,3 +29,6 @@ def resolveResponse(hardware, response):
 
     elif response == 'RELE-2-OFF':
         print('RELE-2-OFF')
+    
+    else:
+        print('> Unresolved response: ' + str(response))

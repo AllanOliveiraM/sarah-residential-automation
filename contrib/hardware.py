@@ -7,6 +7,7 @@
 from time import sleep
 from collections import deque
 from serial import Serial
+from sys import exit as exitProgram
 
 from contrib.actions import resolveResponse
 
@@ -68,6 +69,7 @@ class Hardware():
             sleep(0.01)
         except:
             print('No hardware success connection.')
+            exitProgram()
             
             
     def write_command(self, command):
@@ -86,6 +88,7 @@ class Hardware():
             sleep(0.05)
         except:
             print('No hardware success connection.')
+            exitProgram()
 
 
     def new_command(self, command):
