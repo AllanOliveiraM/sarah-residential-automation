@@ -18,6 +18,12 @@ def resolveResponse(hardware, response):
         sleep(0.5)
         hardware.write_command('b')
 
+    elif response == 'US-INF':
+        print('US-INF')
+
+    elif response == 'US-SUP':
+        print('US-SUP')
+        
     elif response == 'RELE-1-ON':
         print('RELE-1-ON')
 
